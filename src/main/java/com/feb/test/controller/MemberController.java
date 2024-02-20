@@ -45,6 +45,8 @@ public class MemberController {
 		// 회원 테이블에 정보 입력하기 
 		// inset이기 때문에 반환 타입은 int (1 성공, 0실패)
 		int result = memberService.join(params);
+		
+		
 		System.out.println("result333333333333333333 : " + result);
 		mv.setViewName("login");
 		return mv;
